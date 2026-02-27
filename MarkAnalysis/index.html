@@ -1,0 +1,46 @@
+Index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mark Analysing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mark Analysing System</h1>
+
+        <div class="form-section">
+            <input type="text" id="name" placeholder="Student Name">
+            <input type="number" id="m1" placeholder="Subject 1">
+            <input type="number" id="m2" placeholder="Subject 2">
+            <input type="number" id="m3" placeholder="Subject 3">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Sub1</th>
+                    <th>Sub2</th>
+                    <th>Sub3</th>
+                    <th>Total</th>
+                    <th>Average</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h3 id="topper"></h3>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+

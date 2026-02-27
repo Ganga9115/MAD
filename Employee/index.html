@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salary Processing Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Salary Processing Application</h1>
+
+  <div class="form-container">
+    <input type="number" id="empId" placeholder="Employee ID">
+    <input type="text" id="empName" placeholder="Employee Name">
+    <input type="number" id="empSalary" placeholder="Salary">
+    <input type="number" id="empAttendance" placeholder="Attendance">
+    <button onclick="addEmployee()">Add Employee</button>
+  </div>
+
+  <div class="search-container">
+    <input type="number" id="searchId" placeholder="Search by ID">
+    <button onclick="searchEmployee()">Search</button>
+  </div>
+
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Attendance</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="aggregate">
+    <button onclick="calculateMaxSalary()">Max Salary</button>
+    <button onclick="calculateMinAttendance()">Min Attendance</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

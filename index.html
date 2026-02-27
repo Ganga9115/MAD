@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PayCore | Payroll System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">PayCore</div>
+        <div class="tagline">Enterprise Payroll Management</div>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h2>Employee Salary Details</h2>
+            <div class="form-grid">
+                <div class="field"><label>Employee Name</label><input id="name" type="text"></div>
+                <div class="field"><label>Department</label><input id="dept" type="text"></div>
+                <div class="field"><label>Register Number</label><input id="regno" type="text"></div>
+                <div class="field"><label>Basic Pay (₹)</label><input id="basic" type="number"></div>
+                <div class="field full"><label>Days Present (out of 30)</label><input id="days" type="number"></div>
+            </div>
+            <div class="actions">
+                <button id="btn" class="primary">Generate Report</button>
+                <button id="pdfBtn" class="secondary">Download PDF</button>
+            </div>
+        </section>
+        <section class="card report">
+            <h2>Salary Report</h2>
+            <pre id="output">Salary report will appear here...</pre>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="salary.js"></script>
+</body>
+</html>
